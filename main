@@ -1,0 +1,14 @@
+public class Main1 {
+    public static void main(String[] args) {
+        Banco banco = new Banco();
+
+        // Crear e iniciar clientes
+        Cliente cliente1 = new Cliente(banco, "Gabri");
+        Cliente cliente2 = new Cliente(banco, "Malui");
+        Cliente cliente3 = new Cliente(banco, "Andy");
+
+        cliente1.start();
+        cliente2.start();
+        cliente3.start();
+    }
+}
